@@ -7,13 +7,13 @@ pipeline {
            git 'https://github.com/ashumax/maven-project'
            }
            }
-           }
           stage ('compile my code') {
           
               steps {
                   withMaven(maven : 'LocalMaven') {
                       sh 'mvn compile'
                       
+                      }
                       }
                       }
                       }
