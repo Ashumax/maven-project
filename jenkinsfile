@@ -2,7 +2,11 @@ pipeline {
      agent any
      stages {
          stage('clone my code'){
+         
+             steps {
            git 'https://github.com/ashumax/maven-project'
+           }
+           }
            }
           stage ('compile my code') {
           
@@ -14,4 +18,4 @@ pipeline {
                       }
                       }
                       }
-                      }
+    
